@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Roboto", serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-image: url('./images/jpg/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: anim 1s forwards;
+}
+
+.container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@keyframes anim {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+  
+footer {
+   margin-top: auto; /* Прижимает футер к низу */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    color: white;
+}
+
+.conact-insides {
+    width: 300px;
+    background: rgba(0, 0, 0, 0.50);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    padding: 10px;
+    border-radius: 10px;
+    display: none;
+}
+
+.conact-insides-overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.30);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+    padding: 20px;
+    display: none;
+}
+
+.active-modal {
+    animation: modal-anim .4s forwards;
+    display: block;
+}
+
+@keyframes modal-anim {
+    from {
+      transform: translate(-50%, -40%);
+    }
+    to {
+      transform: translate(-50%, -50%);
+    }
+}
+
+.conact-insides .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 10px;
+}
+
+.conact-insides .contacts a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav button {
+    margin: 0 15px;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1em;
+    background: white;
+    color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero h1 {
+    font-size: 3em;
+    margin: 0;
+}
+
+.hero p {
+    width: 100%;
+    max-width: 1000px;
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.hero button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background: white;
+    color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.hero button:hover {
+    background: #ddd;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: white;
+}
+
+.contacts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.hero-btns-wrapper a {
+    padding: 10px 20px;
+    font-size: 1em;
+    background: white;
+    color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contacts a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+}
+
+.overlay-bg {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.50);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    position: relative;
+    height: 100%;
+    margin: auto;
+}
