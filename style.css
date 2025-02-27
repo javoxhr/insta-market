@@ -38,7 +38,7 @@ footer {
 
 header {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px 0;
     color: white;
@@ -113,7 +113,6 @@ nav button {
 
 .hero {
     text-align: center;
-    padding: 100px 20px;
     color: white;
     display: flex;
     flex-direction: column;
@@ -147,6 +146,13 @@ nav button {
     background: #ddd;
 }
 
+.logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
 footer {
     text-align: center;
     padding: 20px;
@@ -158,6 +164,12 @@ footer {
     align-items: center;
     justify-content: center;
     margin-top: 10px;
+}
+
+.hero-btns-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
 
 .hero-btns-wrapper a {
@@ -187,6 +199,12 @@ footer {
     top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.50);
+}
+
+#contact-btn {
+    border: none;
+    background: none;
+    padding: 0;
 }
 
 main {
